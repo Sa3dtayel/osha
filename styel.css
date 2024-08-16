@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+  height: 100vh;
+ 
+  font-family: "Roboto Mono", monospace;
+}
+.homes{
+  background:  url(imgs/osha/back2.jpg)  50% 50% scroll no-repeat;
+  background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(9, 15, 31, 0.555);
+    color: aliceblue;
+    z-index: 100;
+    
+}
+.logo h1{
+
+  cursor: pointer;
+   font-size: 20px;
+   padding: 10px;
+   font-family: "Ga Maamli", sans-serif;
+   animation-name: log;
+   animation-iteration-count: 1;
+   animation-duration: 2s;
+}
+nav{
+    width: 40%;
+    padding: 10px;
+    color: black;
+    
+    text-transform: uppercase;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: brown;
+    
+    font-size: 20px;
+    
+}
+nav ul a{
+    text-decoration:none;
+    color: azure;
+    
+transition: 0.5s;
+ 
+}
+nav ul a:hover{
+  color: rgb(226, 139, 139);
+}
+
+.icons-bar{
+    display: flex;
+    padding: 10px;
+    width: 15%;
+    justify-content: space-evenly;
+}
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .home{
+    height: 90vh;
+ 
+  }
+  .box{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.493);
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+  .dark-text{
+    padding: 10px;
+  }
+  .dark-text h2{
+    font-size: 60px;
+
+  }
+  .dark-text h4{
+    padding-left: 10rem;
+    padding-bottom: 20px;
+    justify-content: end;
+    font-size: 25px;
+    color:rgb(197, 208, 228);
+  }
+  .dark-text p{
+    padding-bottom: 30px;color: #d6ecfd;
+    font-size: 19px;
+  }
+  #botn{
+    background: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    font-size: 19px;
+    border: 1px solid rgb(177, 163, 255);
+    border-radius: 8px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+#botn:hover{
+  color: white;
+}
+#botn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #3a49cf;
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+#botn:hover::before{
+   height: 180%;
+}
+
+.about{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+.about-text{
+  width: 60%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+.about-text h1{
+  text-align: center;
+  font-size: 26px;
+  padding: 30px;
+  
+}
+.about-text p{
+  
+  text-align: start;
+  padding-top: 20x;
+padding: 10px;
+  font-size: 18px;
+  width: 100%;
+
+  
+}
+.about-img {
+  width: 40%;
+  height: 40%;
+  align-items: center;
+  position: relative;
+  top: 30%;
+  left: 12%;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px 5px ;
+  box-shadow: 10px;
+}
+
+.about-img img{
+  width: 100%;
+  height: 100%;
+
+}
+.about-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  
+}
+.about-item img{
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+.rooms{
+  height: 100vh;
+
+}
+.text-room{
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+.slider img{
+width: 500px;
+height: 200px;
+
+}
+.slider{
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul{
+  padding: 0;
+  display: flex;
+  width: 2000px;
+  list-style: none;
+  position: relative;
+ animation: move 15s ease-in-out infinite;
+ animation-fill-mode:both;
+ animation-direction: normal;
+}
+.slider ul:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.img-rom img{
+  width: 200px;
+  height: 250px;
+ 
+  border-radius: 5%;
+
+}
+.img-rom{
+ gap: 3px;
+  width: 100%;
+display: flex;
+justify-content: center;
+}
+
+
+@keyframes move {
+  0%{left: 0;}
+  15%{left: -500px;}
+  30%{left: -1000px}
+  45%{left: -1500px}
+  60%{left: -1000px}
+  75%{left: -500px}
+ 100%{
+  left: 0;
+ }
+  
+}
+
+
+
+
+
+
+
+
+
+@keyframes log {
+  0%,100%{
+    translate: 0 0;
+  }  
+  50%{
+    translate: 50px 0;
+    rotate: 360deg;
+  }
+  75%{
+    translate: -50 0;
+  }
+
+}
